@@ -1,0 +1,82 @@
+body{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#gameName{
+    font-family: arial;
+    font-size: 50px ;
+    color: rgb(100, 95, 95);
+}
+.board{
+    width: 500px;
+    height: 500px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.board div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: arial;
+    font-size: 150px;
+    max-width: 300px;
+    max-height: 300px;
+    min-width: 100px;
+    min-height: 100px;
+    background-color: rgb(231, 229, 229);
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.restart-btn{
+    margin-top: 15px;
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+    font-size: 25px;
+    font-weight: 520;
+    background-color: lightgreen;
+    border: 1px solid rgb(110, 104, 104);
+    border-radius: 2px;
+    box-shadow:  1px 2px 3px rgb(83, 82, 82, 0.2);
+    cursor: pointer;
+    transition-duration: 0.15s
+
+}
+.restart-btn:hover{
+    background-color: rgb(10, 190, 25);
+}
+.restart-btn:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(1px);
+  }
+.endgame{
+    display: none;
+    
+}
+.endGameClicked{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid gray;
+    border-radius: 2px;
+    font-size: 70px;
+    background-color: rgba(32, 231, 32, 0.747);
+    position: absolute;
+}
+.switch-cnt{
+
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    height: 52px;
+    align-items: center;
+    justify-content:space-between;
+    margin-top: 15px;
+}
+
